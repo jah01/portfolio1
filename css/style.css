@@ -1,0 +1,232 @@
+/*
+written (with ♥)
+by Joseph Hilber
+beginning 4/25/2020
+*/
+
+@font-face {
+    font-family: "typoRoundBold";
+    src: url("../fonts/typo-round/Typo_Round_Bold_Demo.otf");
+}
+
+@font-face {
+    font-family: "latoBold";
+    src: url("../fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "libReg";
+    src: url("../fonts/liberation/LiberationSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "libLight";
+    src: url("../fonts/liberation/LiberationSans-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "gothicLight";
+    src: url("../fonts/Gothic_A1/GothicA1-Light.ttf");
+}
+
+@font-face {
+    font-family: "gothicExtraLight";
+    src: url("../fonts/Gothic_A1/GothicA1-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "gothicReg";
+    src: url("../fonts/Gothic_A1/GothicA1-Regular.ttf");
+}
+
+@font-face {
+    font-family: "gothicSemiBold";
+    src: url("../fonts/Gothic_A1/GothicA1-SemiBold.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    font-family: "gothicReg", "libReg", sans-serif;
+    letter-spacing: .5px;
+    font-weight: 300;
+    font-size: 28px;
+    color: #707070;
+    position: relative;
+    margin-top: 32px;
+    height: auto;
+    width: 88vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    display: flex;
+    user-select: none;
+    align-items: center;
+    margin-bottom: 12px;
+    
+/*
+    max-width: 1620px;
+    margin: 32px auto 12px;
+*/
+}
+
+.navButton {
+    font-family: "gothicExtraLight", "libLight", sans-serif;
+    letter-spacing: 0;
+    font-weight: 100;
+    border-bottom: 4px solid rgba(0, 0, 0, 0);
+}
+
+.navButton:hover {
+    border-bottom: 4px solid #bdd89f;
+}
+
+.littleSpace {
+    width: 40px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+#navSpace {
+    flex: auto;
+}
+
+#name {
+    border-bottom: 4px solid #bdd89f;
+}
+
+#picture {
+    width: 36vh;
+    height: 36vh;
+    min-width: 240px;
+    min-height: 240px;
+/*
+    width: 300px;
+    height: 300px;
+*/
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 4px solid #707070;
+    background-image: url(../img/glassesCropped.jpeg);
+    background-size: cover;
+}
+
+#hello {
+    text-align: center;
+    font-family: "gothicReg", "libReg", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 42px;
+    color: #707070;
+}
+
+
+
+#spanName {
+    font-family: "gothicSemiBold", "libReg", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 42px;
+    color: #9cbd77;
+}
+
+.five {
+    height: 5vh;
+}
+
+#arrow {
+    width: 146px;
+    height: 80px;
+    margin: 0 auto;
+    background-image: url(../img/arrow.svg);
+    background-size: cover;
+}
+
+.navBottomButton {
+    font-size: 42px;
+}
+
+#navBottom {
+    
+/*    */
+    margin-left: 12vw;
+    margin-right: 12vw;
+    
+    width: 76vw;
+    
+/*    */
+    margin-top: 0;
+    color: #9d9d9d;
+    
+/*
+    max-width: 1400px;
+    margin: 0 auto;
+*/
+}
+
+#scroll {
+    height: 40px;
+}
+
+#bio {
+    color: #707070;
+    border-bottom: 4px solid #bdd89f;
+    cursor: default;
+}
+
+/*
+.navButtonBottom:hover {
+    border-bottom: 4px solid #bdd89f;
+}
+*/
+
+#tf {
+    width: 76vw;
+    
+    margin-left: 12vw;
+    margin-right: 12vw;
+    margin-top: 60px;
+/*    margin-bottom: 60px;*/
+    
+    line-height: 60px;
+    height: auto;
+/*    color: #9d9d9d;*/
+    color: #707070;
+    font-family: "gothicReg", "libReg", sans-serif;
+/*
+    max-width: 1400px;
+    margin: 60px auto;
+*/
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+footer {
+    color: #9d9d9d;
+    font-family: "gothicReg", "libReg", sans-serif;
+    margin-bottom: 32px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    width: 88vw;
+}
+
+.pFirst {
+    text-indent: 0;
+}
