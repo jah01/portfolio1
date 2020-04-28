@@ -71,11 +71,6 @@ nav {
     user-select: none;
     align-items: center;
     margin-bottom: 12px;
-    
-/*
-    max-width: 1620px;
-    margin: 32px auto 12px;
-*/
 }
 
 .navButton {
@@ -103,7 +98,7 @@ a {
     flex: auto;
 }
 
-#name {
+.underline {
     border-bottom: 4px solid #bdd89f;
 }
 
@@ -112,10 +107,6 @@ a {
     height: 36vh;
     min-width: 240px;
     min-height: 240px;
-/*
-    width: 300px;
-    height: 300px;
-*/
     background-color: rgba(0, 0, 0, 0);
     border-radius: 50%;
     margin: 0 auto;
@@ -160,21 +151,11 @@ a {
 }
 
 #navBottom {
-    
-/*    */
     margin-left: 12vw;
     margin-right: 12vw;
-    
     width: 76vw;
-    
-/*    */
     margin-top: 0;
     color: #9d9d9d;
-    
-/*
-    max-width: 1400px;
-    margin: 0 auto;
-*/
 }
 
 #scroll {
@@ -187,29 +168,16 @@ a {
     cursor: default;
 }
 
-/*
-.navButtonBottom:hover {
-    border-bottom: 4px solid #bdd89f;
-}
-*/
-
 #tf {
     width: 76vw;
     
     margin-left: 12vw;
     margin-right: 12vw;
     margin-top: 60px;
-/*    margin-bottom: 60px;*/
-    
     line-height: 60px;
     height: auto;
-/*    color: #9d9d9d;*/
     color: #707070;
     font-family: "gothicReg", "libReg", sans-serif;
-/*
-    max-width: 1400px;
-    margin: 60px auto;
-*/
     text-align: justify;
     text-indent: 2em;
 }

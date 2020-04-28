@@ -15,7 +15,6 @@ $(document).ready(function() {
             $("footer").css("font-size", "14px");
         } else if (w <= 1000) {
             $("#navTop").css("font-size", parseInt((w / 35.8), 10).toString() + "px");
-            //$("#tf").css("font-size", parseInt((w / 49), 10).toString() + "px");
             $("#tf").css("font-size", "14px");
             $("#tf").css("line-height", "30px");
             $("footer").css("font-size", "14px");
@@ -76,8 +75,6 @@ $(document).ready(function() {
     //https://css-tricks.com/snippets/jquery/smooth-scrolling/
     //https://codepen.io/HZaccaro/pen/zvrgLb
     $(function() {
-        // This will select everything with the class smoothScroll
-        // This should prevent problems with carousel, scrollspy, etc...
         $('.smoothScroll').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                 this.preventDefault();
@@ -86,7 +83,7 @@ $(document).ready(function() {
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top
-                    }, 100); // The number here represents the speed of the scroll in milliseconds
+                    }, 100);
                     return false;
                 }
             }
