@@ -179,6 +179,7 @@ $(document).ready(function() {
             h = 60;
         }
         $("#beforeFooter").height(h);
+        $("#contactCards").css("margin-bottom", h.toString() + "px");
     };
     
     

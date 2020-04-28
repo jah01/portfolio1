@@ -170,7 +170,6 @@ a {
 
 #tf {
     width: 76vw;
-    
     margin-left: 12vw;
     margin-right: 12vw;
     margin-top: 60px;
@@ -197,4 +196,44 @@ footer {
 
 .pFirst {
     text-indent: 0;
+}
+
+#contactCards {
+/*    margin-top: 5vw;*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+/*    height: 500px;*/
+    background-color: maroon;
+    color: #707070;
+    font-family: "gothicReg", "libReg", sans-serif;
+}
+
+.cards {
+    width: 26.66vw;
+    min-width: 500px;
+    height: 27vw;
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+
+.spaceCards {
+    width: 5vw;
+}
+
+.cardsGUI {
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    height: 86%;
+/*    border: 1px solid red;*/
+    background-color: greenyellow;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+    transition: 400ms;
+}
+
+.cardsGUI:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
 }
