@@ -206,7 +206,7 @@ footer {
     margin-right: 10vw;
     width: 80vw;
 /*    height: 500px;*/
-    color: #707070;
+/*    color: #707070;*/
     font-family: "gothicReg", "libReg", sans-serif;
 }
 
@@ -232,8 +232,18 @@ footer {
     background-color: #bdd89f;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
     transition: 400ms;
+    color: white;
+    text-align: center;
 }
 
 .cardsGUI:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+}
+
+.cardsTitle {
+    font-family: "gothicSemiBold", sans-serif;
+    display: inline-block;
+}
+
+.cardsDiv {
 }
