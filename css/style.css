@@ -197,6 +197,7 @@ footer {
     width: 26.66vw;
     min-width: 500px;
     height: 27vw;
+    min-height: 220px;
     margin: 0 auto;
 }
 

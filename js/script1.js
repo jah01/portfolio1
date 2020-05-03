@@ -18,13 +18,13 @@ $(document).ready(function() {
         var w = $(window).width();
         if (w < 500) {
             $(".cardsTitle").css("font-size", "14px");
-            $(".cardsInfo").css("font-size", "12px");
+            $(".cardsInfo").css("font-size", "14px");
         } else if (w <= 1000) {
             $(".cardsTitle").css("font-size", parseInt(((w - 500) / 130) + 14, 10).toString() + "px");
             $(".cardsInfo").css("font-size", "14px");
         } else if (w <= 1800){
             $(".cardsTitle").css("font-size", "24px");
-            $(".cardsInfo").css("font-size", "18px");
+            $(".cardsInfo").css("font-size", "16px");
         } else {
             $(".cardsTitle").css("font-size", parseInt((w / 75), 10).toString() + "px");
             $(".cardsInfo").css("font-size", parseInt((w / 100), 10).toString() + "px");
