@@ -35,7 +35,7 @@ $(document).ready(function() {
     var resizeCardsInternal = function() {
         var h = $(".cardsGUI").height();
         var h2 = $(".cardsDiv").height();
-        $(".cardsTitle").css("margin-top", parseInt((h - h2) / 2.8, 10).toString() + "px");
+        $(".cardsTitle").css("padding-top", parseInt((h - h2) / 2.5, 10).toString() + "px");
     };
     
     
