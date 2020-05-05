@@ -271,3 +271,7 @@ br {
     margin-right: 1em;
     margin-bottom: .5em;
 }
+
+.linkSeen {
+    text-decoration: underline #707070;
+}
