@@ -165,6 +165,8 @@ a {
     font-family: "libReg", sans-serif;
     text-align: justify;
     text-indent: 2em;
+    display: flex;
+/*    display: inline-block;*/
 }
 
 .pointer {
@@ -274,4 +276,8 @@ br {
 
 .linkSeen {
     text-decoration: underline #707070;
+}
+
+.imgRounded {
+    border-radius: 8px;
 }
