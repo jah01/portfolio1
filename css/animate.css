@@ -3642,3 +3642,43 @@
     animation-name: bounce;
     animation-duration: 1s;
 }
+
+@keyframes fadeInUpCustom {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30%, 0);
+    transform: translate3d(0, 30%, 0);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30%, 0);
+    transform: translate3d(0, 30%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/*
+.fadeInUpCustom {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+*/
+
+.fadeInUpCustom1 {
+    animation: fadeInUpCustom;
+    animation-duration: 2s;
+}
+
+.fadeInUpCustom2 {
+    animation: fadeInUpCustom;
+    animation-duration: 2.4s;
+}
+
+.fadeInUpCustom3 {
+    animation: fadeInUpCustom;
+    animation-duration: 2.8s;
+}

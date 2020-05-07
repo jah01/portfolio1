@@ -5,13 +5,13 @@
 $(document).ready(function() {
     
     
-    var resizeContactCards = function() {
-        var h = .05 * $(window).height();
-        if (h < 60) {
-            h = 60;
-        }
-        $("#contactCards").css("margin-bottom", h.toString() + "px").css("margin-top", h.toString() + "px");
-    };
+//    var resizeContactCards = function() {
+//        var h = .05 * $(window).height();
+//        if (h < 60) {
+//            h = 60;
+//        }
+//        $("#contactCards").css("margin-bottom", h.toString() + "px").css("margin-top", h.toString() + "px");
+//    };
     
     
     var resizeCardsText = function() {
@@ -19,45 +19,71 @@ $(document).ready(function() {
         if (w < 500) {
             $(".cardsTitle").css("font-size", "14px");
             $(".cardsInfo").css("font-size", "14px");
+            
+            $(".svgs").height(30);
+            $("#navTop").css("font-size", "14px");
+            $("footer").css("font-size", "14px");
         } else if (w <= 1000) {
             $(".cardsTitle").css("font-size", parseInt(((w - 500) / 130) + 14, 10).toString() + "px");
             $(".cardsInfo").css("font-size", "14px");
+            
+            $(".svgs").css("height", parseInt(((w - 500) / 30.952) + 30, 10).toString() + "px");
+            $("#navTop").css("font-size", parseInt((w / 35.8), 10).toString() + "px");
+            $("footer").css("font-size", "14px");
         } else if (w <= 1800){
             $(".cardsTitle").css("font-size", "24px");
             $(".cardsInfo").css("font-size", "16px");
+            
+            $(".svgs").height(72);
+            $("#navTop").css("font-size", "28px");
+            $("footer").css("font-size", "18px");
         } else {
             $(".cardsTitle").css("font-size", parseInt((w / 75), 10).toString() + "px");
             $(".cardsInfo").css("font-size", parseInt((w / 100), 10).toString() + "px");
+            
+            $(".svgs").css("height", parseInt((w / 25), 10).toString() + "px");
+            $("#navTop").css("font-size", parseInt((w / 64.2), 10).toString() + "px");
+            $("footer").css("font-size", parseInt((w / 100), 10).toString() + "px");
         }
-    };
-    
-    
-    var resizeCardsInternal = function() {
+        
         var h = $(".cardsGUI").height();
         var h2 = $(".cardsDiv").height();
-        $(".cardsTitle").css("padding-top", parseInt((h - h2) / 2.5, 10).toString() + "px");
-    };
-    
-    
-    var resizeSVG = function() {
-        var w = $(window).width();
-        if (w < 500) {
-            $(".svgs").height(30);
-        } else if (w <= 1000) {
-            $(".svgs").css("height", parseInt(((w - 500) / 30.952) + 30, 10).toString() + "px");
-        } else if (w <= 1800) {
-            $(".svgs").height(72);
-        } else {
-            $(".svgs").css("height", parseInt((w / 25), 10).toString() + "px");
+        $(".cardsTitle").css("margin-top", parseInt((h - h2) / 2.5, 10).toString() + "px");
+        
+        var hs = .05 * $(window).height();
+        if (hs < 60) {
+            hs = 60;
         }
+        $("#contactCards").css("margin-bottom", hs.toString() + "px").css("margin-top", hs.toString() + "px");
     };
+    
+    
+//    var resizeCardsInternal = function() {
+//        var h = $(".cardsGUI").height();
+//        var h2 = $(".cardsDiv").height();
+//        $(".cardsTitle").css("padding-top", parseInt((h - h2) / 2.5, 10).toString() + "px");
+//    };
+//    
+//    
+//    var resizeSVG = function() {
+//        var w = $(window).width();
+//        if (w < 500) {
+//            $(".svgs").height(30);
+//        } else if (w <= 1000) {
+//            $(".svgs").css("height", parseInt(((w - 500) / 30.952) + 30, 10).toString() + "px");
+//        } else if (w <= 1800) {
+//            $(".svgs").height(72);
+//        } else {
+//            $(".svgs").css("height", parseInt((w / 25), 10).toString() + "px");
+//        }
+//    };
     
     
     $(window).bind('resize', function() {
-        resizeContactCards();
+        //resizeContactCards();
         resizeCardsText();
-        resizeCardsInternal();
-        resizeSVG();
+        //resizeCardsInternal();
+        //resizeSVG();
     }).trigger('resize');
     
 });

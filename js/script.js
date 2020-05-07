@@ -65,7 +65,7 @@ $(document).ready(function() {
             $("#spanName").css("font-size", parseInt((w / 42.8), 10).toString() + "px");
         }
         
-        $("#name").html($("#proj1").css("font-size"));
+        //$("#name").html($("#proj1").css("font-size"));
         //var textWidth = $("#bio").width() + $("#educ").width() + $("#exp").width() + $("#skills").width() + $("#proj").width();
         
         //$(".navBottomSpace").width((w - textWidth) / 4);
@@ -93,7 +93,7 @@ $(document).ready(function() {
     
     
     $("#proj1").click(function() {
-        $("#tf").html("<p class=\"pFirst\">My favorite project so far has been this website, so I put it here first. I used static HTML and coded this all from scratch, with minimal outside code (aside from jQuery, of course). Through this I not only expanded my knowledge about the capabilities of JS, but I executed better programming practices and made this site responsive. Before this site, I had not really created anything with total responsiveness in mind. With this project, I tested out many different resolutions to make sure this looked acceptable on all. Additionally, I made sure that the design was consistent across both of the webpages. It features a minimalist design with colors that work well together. Although the site may look modest, it would not be the same site without the JS working under the hood. This makes viewing and interacting with this seemigly simple site a much more pleasant experience. Thanks for visiting, and if you'd like, check out the code on Github!</p>");
+        $("#tf").html("<p class=\"pFirst\">My favorite project so far has been this website, so I put it here first. I used static HTML and coded this all from scratch, with minimal outside code (aside from jQuery, of course). Through this I not only expanded my knowledge about the capabilities of JS, but I executed better programming practices and made this site responsive. Before this site, I had not really created anything with total responsiveness in mind. With this project, I tested out many different resolutions to make sure this looked acceptable on all. Additionally, I made sure that the design was consistent across both of the webpages. It features a minimalist design with colors that work well together. Although the site may look modest, it would not be the same site without the JS working under the hood. This makes viewing and interacting with this seemigly simple site a much more pleasant experience. Thanks for visiting, and if you'd like, check out the code on <a href=\"https://github.com/jah01/portfolio1\" target=\"_blank\" class=\"linkSeen\">Github</a>!</p></p>");
         
         $("#proj1").css("color", "#707070").css("border-bottom", "4px solid rgba(189, 216, 159, 1)").css("cursor", "default").hover(function () {
                 $(this).css("border-bottom", "4px solid rgba(189, 216, 159, 1)");

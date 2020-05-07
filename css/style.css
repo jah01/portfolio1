@@ -195,9 +195,9 @@ footer {
 
 .cards {
     width: 26.66vw;
-    min-width: 500px;
+    min-width: 360px;
     height: 27vw;
-    min-height: 220px;
+    min-height: 240px;
     margin: 0 auto;
 }
 
