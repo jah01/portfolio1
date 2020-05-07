@@ -165,8 +165,6 @@ a {
     font-family: "libReg", sans-serif;
     text-align: justify;
     text-indent: 2em;
-    display: flex;
-/*    display: inline-block;*/
 }
 
 .pointer {
