@@ -3751,3 +3751,8 @@
     animation: fadeInLeftSmall;
     animation-duration: 1s;
 }
+
+.fadeInUpCustom4 {
+    animation: fadeInUpCustom;
+    animation-duration: 4s;
+}
