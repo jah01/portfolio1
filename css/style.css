@@ -112,7 +112,7 @@ a {
 
 
 
-#spanName {
+.spanName {
     font-family: "gothicSemiBold", "libReg", sans-serif;
     letter-spacing: 2px;
     font-weight: 500;
@@ -130,6 +130,10 @@ a {
     margin: 0 auto;
     background-image: url(../img/arrow.svg);
     background-size: cover;
+/*
+    position: absolute;
+    bottom: 0;
+*/
 }
 
 .navBottomButton {
@@ -278,4 +282,32 @@ br {
 
 .imgRounded {
     border-radius: 8px;
+}
+
+.words {
+    user-select: none;
+    text-align: center;
+    font-family: "gothicReg", "libReg", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 42px;
+    color: #707070;
+}
+
+#main {
+    height: 100vh;
+    position: relative;
+}
+
+#intro {
+    height: 70vh;
+    position: relative;
+    display: flex;
+/*    text-align: center;*/
+/*    vertical-align: middle;*/
+}
+
+#introInner {
+/*    position: absolute;*/
+    margin: auto;
 }

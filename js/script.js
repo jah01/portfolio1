@@ -46,37 +46,42 @@ $(document).ready(function() {
     };
     
     
-    var sizePicSpacing = function() {
-        
-        var h = $(window).height();
-        
-        var spacing = h - ($("nav").height() + parseInt($("nav").css("margin-top").replace("px", "")) + 20 + $("#picture").height() + $("#hello").height() + $("#arrow").height() + (.2 * h));
-        
-        $("#topPicSpacing").height(spacing);
-        
-        $("#afterArrow").height(h - $("#arrow").offset().top - $("#arrow").height() + 20);
-    };
+//    var sizePicSpacing = function() {
+//        
+//        var h = $(window).height();
+//        
+//        var spacing = h - ($("nav").height() + parseInt($("nav").css("margin-top").replace("px", "")) + 20 + $("#picture").height() + $("#hello").height() + $("#arrow").height() + (.2 * h));
+//        
+//        $("#topPicSpacing").height(spacing);
+//        
+//        $("#afterArrow").height(h - $("#arrow").offset().top - $("#arrow").height() + 20);
+//    };
     
     
     var resizeNavBottomSpace = function() {
         
         var w = $(window).width();
+        var h = $(window).height();
         if (w < 500) {
             $(".navBottomButton").css("font-size", "19px");
-            $("#hello").css("font-size", "19px");
-            $("#spanName").css("font-size", "19px");
+            $(".words").css("font-size", "19px");
+            $(".spanName").css("font-size", "19px");
+            $("#intro").height(h * .5);
         } else if (w <= 1000) {
             $(".navBottomButton").css("font-size", parseInt((w / 26.2), 10).toString() + "px");
-            $("#hello").css("font-size", parseInt((w / 26.2), 10).toString() + "px");
-            $("#spanName").css("font-size", parseInt((w / 26.2), 10).toString() + "px");
+            $(".words").css("font-size", parseInt((w / 26.2), 10).toString() + "px");
+            $(".spanName").css("font-size", parseInt((w / 26.2), 10).toString() + "px");
+            $("#intro").height(h * .6);
         } else if (w <= 1800) {
             $(".navBottomButton").css("font-size", "42px");
-            $("#hello").css("font-size", "42px");
-            $("#spanName").css("font-size", "42px");
+            $(".words").css("font-size", "42px");
+            $(".spanName").css("font-size", "42px");
+            $("#intro").height(h * .7);
         } else {
             $(".navBottomButton").css("font-size", parseInt((w / 42.8), 10).toString() + "px");
-            $("#hello").css("font-size", parseInt((w / 42.8), 10).toString() + "px");
-            $("#spanName").css("font-size", parseInt((w / 42.8), 10).toString() + "px");
+            $(".words").css("font-size", parseInt((w / 42.8), 10).toString() + "px");
+            $(".spanName").css("font-size", parseInt((w / 42.8), 10).toString() + "px");
+            $("#intro").height(h * .8);
         }
         
         //$("#name").html($("#proj1").css("font-size"));
@@ -172,7 +177,7 @@ $(document).ready(function() {
     });
     
     $("#proj5").click(function() {
-        $("#tf").html("<img src=\"img/dewit.svg\" align=\"left\" class=\"projPic imgRounded\"><p class=\"pFirst\"><a href=\"https://www.github.com/jah01/Dewit\" target=\"_blank\" class=\"linkSeen\">View on Github</a><br />The final project I have showcased here is an Android app titled Dewit. A couple of my friends and I are currently creating this app to help people complete daily tasks and reach their goals. It is coded in Java. This was the first time any of us had really gone in depth with Android Studio and our first real expereience creating an app. The hardest part of this project is lack of experience.</p>");
+        $("#tf").html("<img src=\"img/dewit.svg\" align=\"left\" class=\"projPic imgRounded\"><p class=\"pFirst\"><a href=\"https://www.github.com/jah01/Dewit\" target=\"_blank\" class=\"linkSeen\">View on Github</a><br />The final project I have showcased here is an Android app titled Dewit. A couple of my friends and I are currently creating this app to help people complete daily tasks and reach their goals. It is coded using Flutter and Dart. This was the first time any of us had really gone in depth with Android Studio and our first real expereience creating an app. The hardest part of this project is lack of experience.</p>");
         imgDiv();
         $("#proj5").css("color", "#707070").css("border-bottom", "4px solid rgba(189, 216, 159, 1)").css("cursor", "default").css("cursor", "default").hover(function () {
                 $(this).css("border-bottom", "4px solid rgba(189, 216, 159, 1)");
@@ -198,12 +203,30 @@ $(document).ready(function() {
     };
     
     
+//    var resizeMain = function() {
+//        $("#main").height($(window).height());
+//        $("#main").width($(window).width());
+//    };
+//    
+    
+//    var positionArrow = function() {
+//        var h = $(window).height();
+//        var hIntro = $("#intro").height();
+//        var space = h - 200 - hIntro;
+//        
+//        $("#beforeArrow").height(space);
+//    };
+    
+    
     $(window).bind('resize', function() {
+        //$("#arrow").offset({bottom: 0, left: $(window).width});
+        //resizeMain();
         resizeText();
-        sizePicSpacing();
+        //sizePicSpacing();
         resizeNavBottomSpace();
         resizeBeforeFooter();
         imgDiv();
+        //positionArrow();
     }).trigger('resize');
     
     
