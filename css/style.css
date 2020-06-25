@@ -32,7 +32,7 @@ beginning 4/25/2020
 
 html {
     scroll-behavior: smooth;
-/*    overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 body {
