@@ -1355,20 +1355,24 @@
 
 @-webkit-keyframes fadeIn {
   from {
+    pointer-events: none;
     opacity: 0;
   }
 
   to {
+    pointer-events: auto;
     opacity: 1;
   }
 }
 
 @keyframes fadeIn {
   from {
+    pointer-events: none;
     opacity: 0;
   }
 
   to {
+    pointer-events: auto;
     opacity: 1;
   }
 }
@@ -3627,6 +3631,18 @@
 /* beginning of code written by Joseph Hilber (beginning April 25, 2019) */
 .fadeInSlow {
     animation-delay: 600ms;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.fadeInSlower {
+    animation-delay: 3s;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.fadeInSlowest {
+    animation-delay: 4s;
     animation-name: fadeIn;
     animation-duration: 1s;
 }
