@@ -108,13 +108,6 @@
   }
 }
 
-/*
-.fadeInUpCustom {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-*/
-
 .fadeInUpCustom1 {
     animation: fadeInUpCustom;
     animation-duration: 2s;

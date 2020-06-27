@@ -187,14 +187,10 @@ $(document).ready(function() {
     
     
     $(window).bind('resize', function() {
-        //$("#arrow").offset({bottom: 0, left: $(window).width});
-        //resizeMain();
         resizeText();
-        //sizePicSpacing();
         resizeNavBottomSpace();
         resizeBeforeFooter();
         imgDiv();
-        //positionArrow();
     }).trigger('resize');
     
     

@@ -88,31 +88,6 @@ a {
     border-bottom: 4px solid #bdd89f;
 }
 
-#picture {
-    width: 36vh;
-    height: 36vh;
-    min-width: 240px;
-    min-height: 240px;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 50%;
-    margin: 0 auto;
-    border: 4px solid #707070;
-    background-image: url(../img/glassesCropped.jpeg);
-    background-size: cover;
-}
-
-#hello {
-    user-select: none;
-    text-align: center;
-    font-family: "gothicReg", "libReg", sans-serif;
-    letter-spacing: 2px;
-    font-weight: 300;
-    font-size: 42px;
-    color: #707070;
-}
-
-
-
 .spanName {
     font-family: "gothicSemiBold", "libReg", sans-serif;
     letter-spacing: 2px;
@@ -131,10 +106,6 @@ a {
     margin: 0 auto;
     background-image: url(../img/arrow.svg);
     background-size: cover;
-/*
-    position: absolute;
-    bottom: 0;
-*/
 }
 
 .navBottomButton {
@@ -204,10 +175,6 @@ footer {
     height: 27vw;
     min-height: 240px;
     margin: 0 auto;
-}
-
-.spaceCards {
-    width: 5vw;
 }
 
 /* help from w3schools.com: https://www.w3schools.com/howto/howto_css_cards.asp */
