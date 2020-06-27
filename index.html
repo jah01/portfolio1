@@ -17,7 +17,7 @@
     
     <body>
     
-        <nav id="navTop" class="animated fadeInSlow">
+        <nav id="navTop">
             <div id="name" class="underline">Joseph Hilber</div>
             <div id="navSpace"></div>
             <a href="https://www.github.com/jah01?tab=repositories" target="_blank"><div class="navButton pRight40">Projects</div></a>
@@ -31,20 +31,20 @@
             <div id="main">
                 <div id="intro">
                     <div id="introInner">
-                        <div class="words animated fadeInLeftSmall1">Hello, I'm <span class="spanName">Joey</span></div>
-                        <div class="words animated fadeInRightCustom1">I'm a <span class="spanName">sophomore</span> at Ohio State</div>
-                        <div class="words animated fadeInLeftCustom1">I'm majoring in <span class="spanName">Computer Science</span></div>
+                        <div id="line1" class="words">Hello, I'm <span class="spanName">Joey</span></div>
+                        <div id="line2" class="words">I'm a <span class="spanName">sophomore</span> at Ohio State</div>
+                        <div id="line3" class="words">I'm majoring in <span class="spanName">Computer Science</span></div>
                         <div class="five"></div>
-                        <div class="animated fadeInUpCustom4">
+                        <div id="lineLast">
                             <div class="words">and I've been coding for years</div>
                             <div class="words">with a focus in <span class="spanName">User Interfaces and Design</span></div>
                         </div>
                     </div>
                 </div>
-                <div class="animated fadeInSlowest"><a href="#scroll"><div id="arrow"></div></a></div>
+                <div id="arrowDiv"><a href="#scroll"><div id="arrow"></div></a></div>
             </div>
             <div id="scroll"></div>
-            <div id="content" class="wow animated fadeIn">
+            <div id="content">
                 <nav id="navBottom">
                     <div class="navButton navBottomButton" id="proj1">This Site</div>
                     <div class="navBottomSpace"></div>
@@ -63,7 +63,7 @@
             <div id="beforeFooter"></div>
         </main>
         
-        <footer class="animated fadeIn">
+        <footer>
             Created by Joseph Hilber
         </footer>
         
@@ -78,6 +78,18 @@
         <script src="js/wow.min.js"></script>
         <script>
             new WOW().init();
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#navTop").addClass("animated fadeInSlow");
+                $("#line1").addClass("animated fadeInLeftSmall1");
+                $("#line2").addClass("animated fadeInRightCustom1");
+                $("#line3").addClass("animated fadeInLeftCustom1");
+                $("#lineLast").addClass("animated fadeInUpCustom4");
+                $("#arrowDiv").addClass("animated fadeInSlowest");
+                $("#content").addClass("wow animated fadeIn");
+                $("footer").addClass("animated fadeIn");
+            });
         </script>
 
     </body>
