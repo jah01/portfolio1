@@ -46,18 +46,6 @@ $(document).ready(function() {
     };
     
     
-//    var sizePicSpacing = function() {
-//        
-//        var h = $(window).height();
-//        
-//        var spacing = h - ($("nav").height() + parseInt($("nav").css("margin-top").replace("px", "")) + 20 + $("#picture").height() + $("#hello").height() + $("#arrow").height() + (.2 * h));
-//        
-//        $("#topPicSpacing").height(spacing);
-//        
-//        $("#afterArrow").height(h - $("#arrow").offset().top - $("#arrow").height() + 20);
-//    };
-    
-    
     var resizeNavBottomSpace = function() {
         
         var w = $(window).width();
@@ -83,11 +71,6 @@ $(document).ready(function() {
             $(".spanName").css("font-size", parseInt((w / 42.8), 10).toString() + "px");
             $("#intro").height(h * .8);
         }
-        
-        //$("#name").html($("#proj1").css("font-size"));
-        //var textWidth = $("#bio").width() + $("#educ").width() + $("#exp").width() + $("#skills").width() + $("#proj").width();
-        
-        //$(".navBottomSpace").width((w - textWidth) / 4);
     };
     
     
@@ -201,21 +184,6 @@ $(document).ready(function() {
         $("#beforeFooter").height(h);
         $("#contactCards").css("margin-bottom", h.toString() + "px");
     };
-    
-    
-//    var resizeMain = function() {
-//        $("#main").height($(window).height());
-//        $("#main").width($(window).width());
-//    };
-//    
-    
-//    var positionArrow = function() {
-//        var h = $(window).height();
-//        var hIntro = $("#intro").height();
-//        var space = h - 200 - hIntro;
-//        
-//        $("#beforeArrow").height(space);
-//    };
     
     
     $(window).bind('resize', function() {
