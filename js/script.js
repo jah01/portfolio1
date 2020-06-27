@@ -5,6 +5,9 @@
 $(document).ready(function() {
     
     
+    function atload() {dom_rdy()}window.onload=atload;
+    
+    
     var imgDiv = function() {
         var w = $(window).width();
         
