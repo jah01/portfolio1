@@ -5,6 +5,9 @@
 $(document).ready(function() {
     
     
+    $("#cover").hide();
+    
+    
     function atload() {dom_rdy()}window.onload=atload;
     
     

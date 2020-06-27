@@ -5,6 +5,9 @@
 $(document).ready(function() {
     
     
+    $("#cover").hide();
+    
+    
     var resizeCardsText = function() {
         var w = $(window).width();
         if (w < 500) {
